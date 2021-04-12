@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fizz Buzz</title>
+</head>
+<body>
+    
+    <h1>N cantidad</h1>
+    <input id="NUM-input" type="number" style="border-color:blue" min="1" max="1000" step="1" maxlength="4">
+    <button id="NUM-btn">OK</button>
+
+    <script>
+document.getElementById('NUM-btn').addEventListener('click',function fizzBuzz1()
+    {
+        var n1= parseInt(document.getElementById('NUM-input').value) +1
+        if(n1>= 1 && n1<=1000){
+            
+            for (var i = 1; i < n1; i++) 
+        {
+            if(i%3 == 0 || i%5==0){
+                if(i % 3 == 0){
+                document.write("fizz");
+                }
+                if(i % 5 == 0){
+                document.write("buzz");
+                }
+            }else{
+                document.write(i);
+            }     
+            document.write("<br>");
+              
+        }
+        }else{
+            alert("Fuera de rango (1 a 1000)");  
+        }
+        
+    })
+    </script>
+</body>
+</html>
+
