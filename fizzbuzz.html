@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fizz Buzz</title>
+</head>
+<body>
+    
+    <h1>N cantidad</h1>
+    <input id="NUM-input" type="number" style="border-color:blue" minl="1" max="1000">
+    <button id="NUM-btn">OK</button>
+
+    <script>
+document.getElementById('NUM-btn').addEventListener('click',function MATRIZ1()
+    {
+        var n1= parseInt(document.getElementById('NUM-input').value) +1
+        
+        for (var i = 1; i < n1; i++) 
+        {
+            if(i%3 == 0 || i%5==0){
+                if(i % 3 == 0){
+                document.write("fizz");
+                }
+                if(i % 5 == 0){
+                document.write("buzz");
+                }
+            }else{
+                document.write(i);
+            }     
+            document.write("<br>");    
+        }
+    })
+    </script>
+</body>
+</html>
+
